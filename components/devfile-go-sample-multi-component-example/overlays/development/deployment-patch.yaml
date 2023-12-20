@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-go-sample-multi-component-example
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rorai-tenant/multi-component-example/devfile-go-sample-multi-component-example@sha256:232b0aeff4f02558891f4c390284c66b8492211ee6d35c17cdba0c971bbacd4b
+        name: my-go
+        resources: {}
+status: {}
